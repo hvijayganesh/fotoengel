@@ -1,0 +1,22 @@
+'use strict';
+
+const Config = {
+  server: {
+    host: 'localhost',
+    port: '5000'
+  },
+  sendgrid: {
+    api_key: '#####',
+    to: 'coding-challenge@mieterengel.de',
+    from: 'FotoEngel <fotoengel@mieterengel.de>'
+  },
+  aws: {
+    access_key_id: 'AKIAIFLMKUOY7Z7UD4JQ',
+    secret_key: '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',
+    bucket: 'fotoengel',
+    region: 'us-west-2'
+  },
+  mongoConnectionString: 'mongodb://database:27017/fotoengel'
+}
+
+module.exports = Config;

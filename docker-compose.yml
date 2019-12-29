@@ -1,0 +1,33 @@
+version: "3"
+services:
+    database:
+        container_name: fotoengel_database
+        image: mongo
+        ports:
+            - "27017:27017"
+        volumes:
+            - /Users/ecom-vijay.g1/mongodb-data/:/data/db
+    frontend:
+        container_name: fotoengel_web
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: hvijayganesh/fotoengel_web
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./client:/usr/src/app
+    backend:
+        container_name: fotoengel_server
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: hvijayganesh/fotoengel_server
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./server:/usr/src/app
+        depends_on:
+            - database
+        # links:
+        #     - database
