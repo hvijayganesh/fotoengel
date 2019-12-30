@@ -11,8 +11,8 @@ const Config = {
     from: 'FotoEngel <fotoengel@mieterengel.de>'
   },
   aws: {
-    access_key_id: 'AKIAIFLMKUOY7Z7UD4JQ',
-    secret_key: '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',
+    access_key_id: '###',
+    secret_key: '####',
     bucket: 'fotoengel',
     region: 'us-west-2'
   },
