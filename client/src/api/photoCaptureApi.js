@@ -7,7 +7,7 @@ const API = 'http://localhost:5000'
 
 //Setting the camera URI
 
-const PHOTO_CAPTURE_API = `${API}/foto`
+const PHOTO_CAPTURE_API = `/foto`
 
 const getSignedUrlForS3Upload = () => {
     let url = `${PHOTO_CAPTURE_API}/sign_s3/`

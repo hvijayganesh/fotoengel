@@ -2,11 +2,7 @@
   "name": "photo-capture",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/foto": {
-      "target": "http://localhost:5000"
-    }
-  },
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "axios": "^0.16.2",
     "jspdf": "^1.5.3",
