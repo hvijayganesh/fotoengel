@@ -1,3 +1,4 @@
+require('dotenv').config();
 const hapi = require('hapi'),
   Inert = require('inert'),
   Config = require('./config'),
@@ -5,7 +6,7 @@ const hapi = require('hapi'),
   Mongoose = require("mongoose");
 
 const server = hapi.server({    
-  port: Config.server.port,
+  port: process.env.PORT || Config.server.port,
   host: Config.server.host,
   routes: {
     cors: true
@@ -13,7 +14,7 @@ const server = hapi.server({
 });
 
 const connectMongoDB = () => {
-  Mongoose.connect(Config.mongoConnectionString, {useNewUrlParser: true});
+  Mongoose.connect(process.env.MONGODB_URI || Config.mongoConnectionString, {useNewUrlParser: true});
 }
 
 const bootUpServer = async () => {

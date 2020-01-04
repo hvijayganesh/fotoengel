@@ -16,7 +16,7 @@ const Config = {
     bucket: 'fotoengel',
     region: 'us-west-2'
   },
-  mongoConnectionString: 'mongodb://database:27017/fotoengel'
+  mongoConnectionString: 'mongodb://localhost:27017/fotoengel'
 }
 
 module.exports = Config;
