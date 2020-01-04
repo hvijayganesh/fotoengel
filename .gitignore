@@ -20,5 +20,5 @@ yarn-error.log*
 sendgrid.env
 .vscode
 
-/fotoengel-react-app/.vscode
-/fotoengel-react-app/node_modules
+/client/.vscode
+/client/node_modules
