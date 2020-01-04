@@ -7,7 +7,7 @@ const hapi = require('hapi'),
 
 const server = hapi.server({    
   port: process.env.PORT || Config.server.port,
-  host: Config.server.host,
+  host: process.env.HOST || Config.server.host,
   routes: {
     cors: true
   }
