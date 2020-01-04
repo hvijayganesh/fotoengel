@@ -7,7 +7,7 @@ const Config = {
   },
   sendgrid: {
     api_key: '#####',
-    to: 'coding-challenge@mieterengel.de',
+    to: 'hvijayganesh@gmail.com',
     from: 'FotoEngel <fotoengel@mieterengel.de>'
   },
   aws: {
