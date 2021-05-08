@@ -20,7 +20,7 @@
     "agenda": "^2.3.0",
     "aws-sdk": "^2.590.0",
     "dotenv": "^8.2.0",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "hapi": "^18.1.0",
     "html-to-text": "^5.1.1",
     "inert": "^5.1.3",
